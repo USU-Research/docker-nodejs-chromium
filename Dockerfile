@@ -1,6 +1,6 @@
 FROM debian:stretch-slim
 
-RUN apt-get update && apt-get install -y xvfb chromium
+RUN apt-get update && apt-get install -y xvfb chromium procps
 
 ADD xvfb-chromium /usr/bin/xvfb-chromium
 RUN ln -s /usr/bin/xvfb-chromium /usr/bin/google-chrome
